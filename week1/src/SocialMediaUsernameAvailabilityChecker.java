@@ -9,7 +9,6 @@ public class SocialMediaUsernameAvailabilityChecker {
         attemptMap.put(username, attemptMap.getOrDefault(username, 0) + 1);
         return !usernameMap.containsKey(username);
     }
-
     public void register(String username, int userId) {
         if (usernameMap.containsKey(username)) {
             System.out.println("Username already taken.");
